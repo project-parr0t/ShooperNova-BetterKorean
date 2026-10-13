@@ -1,0 +1,69 @@
+{
+  "schema": "shooper-nova.release-record/v1",
+  "patch_id": "shooper-nova-ko-improved",
+  "release_id": "r3",
+  "release_title": "Shooper Nova Patch r3 (Game Version Steam Build 25656630)",
+  "asset": {
+    "name": "ShooperNova-BetterKorean-r3-SteamBuild25656630-Windows-x64.zip",
+    "bytes": 309189,
+    "sha256": "b9f81be9d81e98b0d5d058f2462d0040be5ed06368d41acd6b379310d33736dd"
+  },
+  "package": {
+    "schema": "parr0t.steam.patch/v4",
+    "installer_contract": "parr0t.windows-installer/v2",
+    "artifact_fingerprint": "7c09c549adab5294529cb7462b4f40f3d191848e571ae80345c8492abe614dee",
+    "installer_sha256": "4980bfa00a80b8de0efbb9b7033c6c0e451308a534205d8093244326cdef423e",
+    "operations": [
+      "install",
+      "restore",
+      "verify"
+    ]
+  },
+  "checkpoint": {
+    "schema": "parr0t.release-checkpoint/v1",
+    "bytes": 546007,
+    "sha256": "3ed483f06f44ca94f97c6b191fa8fafab67fe8486ae7615cb894328849fb2f53",
+    "entries": 842,
+    "reviewed": 831,
+    "source_preserved": 11
+  },
+  "payload": {
+    "path": "ShooperNova_Data/StreamingAssets/Bundles/bundlelanguages",
+    "bytes": 132766,
+    "sha256": "3b982a5de718845167e6274b55880ada00a1cd45f46564c2e19b2247b27b1e21"
+  },
+  "supported_game": {
+    "platform": "Windows x64",
+    "steam_app_id": "2853160",
+    "steam_build_id": "25656630",
+    "steam_depot_id": "2853161",
+    "steam_manifest_id": "3351376408282608686",
+    "unity_version": "2022.3.62f1",
+    "source_binding": {
+      "path": "ShooperNova_Data/StreamingAssets/Bundles/bundlelanguages",
+      "bytes": 133325,
+      "sha256": "2c422b756c94b93a0f5720b7b8a0bf783469b441e1cd24a2d868ab7526263024"
+    }
+  },
+  "sdk": {
+    "main_commit": "2597f5b46cbc7fa7c27580281b08c987683cba28",
+    "branch": "sdk-unity-2021.3",
+    "commit": "ebc58f6c2d998eaddb5289657f1f8e6371ee23da",
+    "adapter_fingerprint": "609e5b2d197a93fc4fcf0f42072be6fccd076c42c9db8c841fae06c26c1792c9"
+  },
+  "inventory": {
+    "target_count": 842,
+    "primary_fingerprint": "61f3c75ea0d95b190193e85777176a86a477f4937796d032f3fc228d1b466d1a",
+    "independent_fingerprint": "facd09380716fc6478be73a1222ffe1a78fd6eb5562680e816fad149972d38d4"
+  },
+  "verification": {
+    "sdk_tests": "107/107 passed",
+    "privacy_scan": "passed",
+    "package_validation": "passed",
+    "synthetic_install_update_verify_restore": "passed",
+    "mismatched_source_rejected_before_mutation": true,
+    "static_coverage": "verified",
+    "real_runtime_for_r3": "not_executed",
+    "prior_runtime_evidence": "The user confirmed a prior package was applied in-game; r3 is the deterministic correction and current-contract repackage."
+  }
+}

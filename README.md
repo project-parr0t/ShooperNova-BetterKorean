@@ -17,16 +17,23 @@ ChatGPT Codex를 기반으로 ChatGPT 6.1 Luna 서브에이전트를 통해 번�
 1. 게임을 완전히 종료합니다.
 2. [Releases](https://github.com/project-parr0t/ShooperNova-BetterKorean/releases/latest)에서 최신 한국어 패치 ZIP을 다운로드합니다.
 3. ZIP의 내용물을 한 폴더에 모두 압축 해제합니다.
-4. `Install-Korean-Patch.bat`을 실행하고 화면의 안내를 따릅니다.
+4. `Install-Translation-Patch.bat`을 실행하고 화면의 안내를 따릅니다.
 
 설치기가 Steam에서 게임 위치를 자동으로 찾습니다. 찾지 못하는 경우 게임 폴더 경로를 직접 입력하거나 탐색기에서 끌어 놓으면 됩니다.
 
-패치 업데이트와 제거도 같은 `Install-Korean-Patch.bat`에서 진행할 수 있습니다.
+패치 설치·업데이트, 원본 복원, 설치 상태 확인도 같은 `Install-Translation-Patch.bat`에서 진행할 수 있습니다.
+
+최신 배포 파일은 `ShooperNova-BetterKorean-r3-SteamBuild25656630-Windows-x64.zip`이며, SHA-256은 `b9f81be9d81e98b0d5d058f2462d0040be5ed06368d41acd6b379310d33736dd`입니다.
+
+## 호환 버전
+현재 배포본은 Windows x64용 Steam 빌드 `25656630`(App ID `2853160`, Unity `2022.3.62f1`)만 지원합니다.
+
+설치기는 원본 언어 리소스의 크기와 SHA-256을 확인하고, 다른 게임 빌드이면 파일을 변경하기 전에 중단합니다.
 
 ## 코드도 공개되어 있나요?
-네. 저장소에는 실제 배포본과 같은 설치기, 패치 전용 브리지 소스, 한국어 번역 데이터와 검증용 매니페스트가 들어있습니다.
+네. 저장소에는 실제 배포본과 같은 복원 가능한 설치 ZIP과 검증용 릴리스 기록이 들어있습니다.
 
-parr0t 번역 SDK와 작업용 데이터는 포함되어 있지 않습니다. 공식 BepInEx 런타임은 저장소에 중복해서 올리지 않고 Releases의 설치 ZIP에만 포함하며, 사용한 버전과 해시는 `artifacts` 폴더에서 확인할 수 있습니다.
+parr0t 번역 SDK, 게임 원본 파일, 작업용 데이터는 포함되어 있지 않습니다. 패치는 기존 한국어 언어 리소스만 교체하며 BepInEx나 별도 런타임을 설치하지 않습니다.
 
 ## 게임이 안 켜져요 / 게임이 튕겨요!
 원본 언어에서 크래시가 발생하는 것이 아니라면 패치 자체의 오류입니다.
